@@ -12,5 +12,20 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('form');
 });
+
+Route::get('customers','Customers@getAllCustomers');
+
+Route::get('customer/{id}','Customers@getCustomer');
+
+Route::post('customer2','Customers@addCustomer');
+
+
+
+// Route::post('customer',function(){
+// 	return  'hi';
+// });
+
+
+
